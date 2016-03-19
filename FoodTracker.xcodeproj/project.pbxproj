@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC8151DE1C9C2BCC00771EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151DD1C9C2BCC00771EEA /* AppDelegate.swift */; };
-		DC8151E01C9C2BCC00771EEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151DF1C9C2BCC00771EEA /* ViewController.swift */; };
+		DC8151E01C9C2BCC00771EEA /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151DF1C9C2BCC00771EEA /* MealViewController.swift */; };
 		DC8151E31C9C2BCC00771EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8151E11C9C2BCC00771EEA /* Main.storyboard */; };
 		DC8151E51C9C2BCC00771EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8151E41C9C2BCC00771EEA /* Assets.xcassets */; };
 		DC8151E81C9C2BCC00771EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8151E61C9C2BCC00771EEA /* LaunchScreen.storyboard */; };
@@ -16,6 +16,8 @@
 		DC8151FE1C9C4E9D00771EEA /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151FD1C9C4E9D00771EEA /* RatingControl.swift */; };
 		DC8152001C9C630F00771EEA /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151FF1C9C630F00771EEA /* Meal.swift */; };
 		DC8152011C9C630F00771EEA /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8151FF1C9C630F00771EEA /* Meal.swift */; };
+		DC8152031C9C791500771EEA /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8152021C9C791500771EEA /* MealTableViewCell.swift */; };
+		DC8152051C9C99C900771EEA /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8152041C9C99C900771EEA /* MealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,7 @@
 /* Begin PBXFileReference section */
 		DC8151DA1C9C2BCC00771EEA /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8151DD1C9C2BCC00771EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC8151DF1C9C2BCC00771EEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC8151DF1C9C2BCC00771EEA /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		DC8151E21C9C2BCC00771EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC8151E41C9C2BCC00771EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC8151E71C9C2BCC00771EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,7 +42,9 @@
 		DC8151F21C9C2BCC00771EEA /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		DC8151F41C9C2BCC00771EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8151FD1C9C4E9D00771EEA /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
-		DC8151FF1C9C630F00771EEA /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DC8151FF1C9C630F00771EEA /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = ../Meal.swift; sourceTree = "<group>"; };
+		DC8152021C9C791500771EEA /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		DC8152041C9C99C900771EEA /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,6 @@
 		DC8151D11C9C2BCC00771EEA = {
 			isa = PBXGroup;
 			children = (
-				DC8151FF1C9C630F00771EEA /* Meal.swift */,
 				DC8151DC1C9C2BCC00771EEA /* FoodTracker */,
 				DC8151F11C9C2BCC00771EEA /* FoodTrackerTests */,
 				DC8151DB1C9C2BCC00771EEA /* Products */,
@@ -84,9 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				DC8151DD1C9C2BCC00771EEA /* AppDelegate.swift */,
-				DC8151DF1C9C2BCC00771EEA /* ViewController.swift */,
-				DC8151E11C9C2BCC00771EEA /* Main.storyboard */,
+				DC8151DF1C9C2BCC00771EEA /* MealViewController.swift */,
 				DC8151FD1C9C4E9D00771EEA /* RatingControl.swift */,
+				DC8151FF1C9C630F00771EEA /* Meal.swift */,
+				DC8151E11C9C2BCC00771EEA /* Main.storyboard */,
+				DC8152041C9C99C900771EEA /* MealTableViewController.swift */,
+				DC8152021C9C791500771EEA /* MealTableViewCell.swift */,
 				DC8151E41C9C2BCC00771EEA /* Assets.xcassets */,
 				DC8151E61C9C2BCC00771EEA /* LaunchScreen.storyboard */,
 				DC8151E91C9C2BCC00771EEA /* Info.plist */,
@@ -207,9 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8152001C9C630F00771EEA /* Meal.swift in Sources */,
-				DC8151E01C9C2BCC00771EEA /* ViewController.swift in Sources */,
+				DC8151E01C9C2BCC00771EEA /* MealViewController.swift in Sources */,
 				DC8151FE1C9C4E9D00771EEA /* RatingControl.swift in Sources */,
 				DC8151DE1C9C2BCC00771EEA /* AppDelegate.swift in Sources */,
+				DC8152051C9C99C900771EEA /* MealTableViewController.swift in Sources */,
+				DC8152031C9C791500771EEA /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
